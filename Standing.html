@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Fan Wiki | Standings</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            /* Background matches your setup */
+            background-image: url('https://i.pinimg.com/1200x/69/ef/10/69ef10391be55dd02e4ec2c446360148.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: 'Titillium Web', sans-serif;
+            color: white;
+        }
+
+        /* NAVIGATION BAR */
+        nav {
+            background-color: #c00600;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* CONTENT BOX */
+        .content-box {
+            background-color: rgba(0, 0, 0, 0.90); /* Darker background to match screenshot */
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto; 
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+
+        /* TABS (Drivers / Constructors) */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #444;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 40px;
+            font-size: 1.2em;
+            color: #888;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            color: white;
+            border-bottom: 3px solid white; /* The white underline from the screenshot */
+            font-weight: bold;
+        }
+        
+        /* IMAGE STYLING (Fixed to prevent stretching) */
+        .main-logo {
+            width: 100%;
+            max-width: 800px; /* Prevents it from getting too huge */
+            height: auto;     /* Keeps the correct aspect ratio */
+            margin-bottom: 30px;
+            border-radius: 10px;
+            border: 1px solid #444;
+        }
+
+        /* --- THE TABLE STYLING (DARK THEME) --- */
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: transparent; /* See-through to match dark box */
+            color: white;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        /* Header Styling */
+        th {
+            color: #888; /* Grey text for headers like in the image */
+            padding: 15px;
+            text-align: left;
+            font-size: 0.9em;
+            border-bottom: 1px solid #444; /* Thin grey line */
+            text-transform: uppercase;
+        }
+
+        /* Row Styling */
+        td {
+            border-bottom: 1px solid #333; /* Thin dark lines between rows */
+            padding: 20px 15px;
+            text-align: left;
+            font-size: 1.2em;
+        }
+
+        /* Make the Team Name Bold */
+        td.team-name {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        /* Number alignments */
+        .num-col {
+            text-align: right; /* Numbers usually look better aligned right */
+            padding-right: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Drivers.html">Drivers</a>
+        <a href="Standing.html">Standing</a>
+    </nav>
+
+    <div class="content-box">
+        
+        <div class="tabs">
+            <div class="tab">DRIVERS</div>
+            <div class="tab active">CONSTRUCTORS</div>
+        </div>
+        <h1 style="text-align: left; margin-bottom: 20px;">2025 Grid Personalities</h1>
+        
+        <img src="https://www.team-bhp.com/sites/default/files/styles/amp_high_res/public/F1%202025%20Driver%20standings.jpg" class="main-logo" alt="2025 Driver Standings">
+        
+
+        <h1 style="text-align: left; font-size: 1.5em; margin-bottom: 10px; margin-top: 30px;">2025 Constructors' Standings</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th width="10%">Rank</th>
+                    <th width="40%">Constructor</th>
+                    <th class="num-col">Points</th>
+                    <th class="num-col">Wins</th>
+                    <th class="num-col">Podiums</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="team-name">McLaren</td>
+                    <td class="num-col">833</td>
+                    <td class="num-col">14</td>
+                    <td class="num-col">34</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="team-name">Mercedes</td>
+                    <td class="num-col">469</td>
+                    <td class="num-col">2</td>
+                    <td class="num-col">12</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="team-name">Red Bull</td>
+                    <td class="num-col">451</td>
+                    <td class="num-col">8</td>
+                    <td class="num-col">15</td>
+                </tr>
+                 <tr>
+                    <td>4</td>
+                    <td class="team-name">Ferrari</td>
+                    <td class="num-col">398</td>
+                    <td class="num-col">0</td>
+                    <td class="num-col">7</td>
+                </tr>
+                 <tr>
+                    <td>5</td>
+                    <td class="team-name">Williams</td>
+                    <td class="num-col">137</td>
+                    <td class="num-col">0</td>
+                    <td class="num-col">2</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <footer style="margin-top: 30px; font-size: 0.8em; color: #888; text-align: left;">
+            <hr style="border-color: #333;">
+            <p> Visit <a href="https://www.formula1.com/" style="color: white;">Formula 1 Official Site</a> </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

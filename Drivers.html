@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Fan Wiki | Drivers</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* Background Image */
+            background-image: url('https://i.pinimg.com/1200x/69/ef/10/69ef10391be55dd02e4ec2c446360148.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: 'Titillium Web', sans-serif;
+            color: white;
+        }
+
+        /* NAVIGATION BAR */
+        nav {
+            background-color: #c00600;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* DARK GLASS BOX */
+        .content-box {
+            background-color: rgba(0, 0, 0, 0.90); /* Dark background like the screenshot */
+            width: 80%;
+            max-width: 900px; 
+            margin: 50px auto; 
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+
+        /* TABS (Drivers / Constructors) */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #444;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 40px;
+            font-size: 1.2em;
+            color: #888;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            color: white;
+            border-bottom: 3px solid white; /* The white underline */
+            font-weight: bold;
+        }
+
+        /* IMAGE STYLE */
+        .main-logo {
+            width: 100%; /* Full width banner like styling */
+            max-width: 600px;
+            margin-bottom: 20px;
+            border: 1px solid #444;
+            border-radius: 10px;
+        }
+
+        /* --- TABLE STYLING (DARK MODE) --- */
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 100%; 
+            background-color: transparent; /* Transparent to see dark box */
+            color: white; 
+            text-transform: none; 
+            font-style: normal;
+        }
+
+        /* Headers */
+        th {
+            color: #888; /* Grey text for headers */
+            padding: 15px;
+            text-align: left;
+            font-size: 0.9em;
+            border-bottom: 1px solid #444;
+            text-transform: capitalize; /* Matches "Rank", "Driver" casing */
+        }
+
+        /* Rows */
+        td {
+            border-bottom: 1px solid #333;
+            padding: 20px 10px;
+            text-align: left;
+            font-size: 1.2em;
+        }
+
+        /* Styling for the Name to look like the Driver Name */
+        .driver-name {
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        
+        /* Smaller text for the team name underneath */
+        .team-label {
+            display: block;
+            font-size: 0.7em;
+            color: #aaa;
+            margin-top: 4px;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Drivers.html">Drivers</a>
+        <a href="Standing.html">Standing</a>
+    </nav>
+
+    <div class="content-box">
+        
+        <div class="tabs">
+            <div class="tab active">DRIVERS</div>
+            <div class="tab">CONSTRUCTORS</div>
+        </div>
+
+        <h1 style="text-align: left; margin-bottom: 10px;">2025 Grid Personalities</h1>
+        
+        <img src="https://i.pinimg.com/1200x/c4/71/af/c471afe65aab494cae10d56e6faaf646.jpg" alt="F1 Drivers" class="main-logo">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th width="10%">Rank</th>
+                    <th width="40%">Driver</th> <th>Signature Move</th> </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="driver-name">
+                        L. Norris <span class="team-label">McLaren</span>
+                    </td>
+                    <td>Full Send (Risk It All)</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="driver-name">
+                        M. Verstappen <span class="team-label">Red Bull</span>
+                    </td>
+                    <td>The Divebomb (Aggressive Overtake)</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="driver-name">
+                        O. Piastri <span class="team-label">McLaren</span>
+                    </td>
+                    <td>Late Braking Expert</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="driver-name">
+                        G. Russell <span class="team-label">Mercedes</span>
+                    </td>
+                    <td>Consistency King</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="driver-name">
+                        C. Leclerc <span class="team-label">Ferrari</span>
+                    </td>
+                    <td>Pole Position Magic</td>
+                </tr>
+            </tbody>
+        </table>
+
+         <footer style="margin-top: 30px; font-size: 0.8em; color: #888; text-align: left;">
+            <hr style="border-color: #333;">
+            <p> Visit <a href="https://www.formula1.com/" style="color: white;">Formula 1 Official Site</a> </p>
+        </footer>
+        
+    </div>
+
+</body>
+</html>
